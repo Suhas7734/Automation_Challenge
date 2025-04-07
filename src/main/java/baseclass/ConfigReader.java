@@ -9,7 +9,7 @@ public class ConfigReader {
 	
 	public static String getproperty(String key) throws IOException {
 		Properties prop= new Properties();
-		String path="C:\\Users\\sanjay royal\\eclipse-workspace\\Automationchallange\\src\\test\\java\\TestData\\com.properties";
+		String path= System.getProperty("user.dir")+"/src/test/java/TestData/com.properties";
 		try {
 			FileInputStream file= new FileInputStream(path);
 			prop.load(file);
